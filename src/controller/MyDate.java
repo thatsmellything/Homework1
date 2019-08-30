@@ -24,7 +24,7 @@ public class MyDate
 		cal.setTimeInMillis(elapsedTime);
 		year = cal.get(Calendar.YEAR);
 		month = cal.get(Calendar.MONTH);
-		day = cal.get(DAY_OF_YEAR);
+		day = cal.get(Calendar.DAY_OF_MONTH);
 		
 		
 	}
@@ -41,14 +41,38 @@ public class MyDate
 		return year;
 	}
 	
+	public void setYear(int year)
+	{
+		this.year = year;
+	}
+	
 	public int getMonth()
 	{
 		return month;
 	}
 	
+	public void setMonth(int month)
+	{
+		this.month = month;
+	}
+	
 	public int getDay()
 	{
 		return day;
+	}
+	
+	public void setDay(int day)
+	{
+		this.day = day;
+	}
+	
+	public void setDate(long elapsedTime)
+	{
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTimeInMillis(elapsedTime);
+		year = cal.get(Calendar.YEAR);
+		month = cal.get(Calendar.MONTH);
+		day = cal.get(Calendar.DAY_OF_MONTH);
 	}
 
 }
