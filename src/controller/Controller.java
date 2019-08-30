@@ -8,7 +8,8 @@ public class Controller
 
 	public void start()
 	{
-		tests.testDate.start();
+		tests.TestDate.start();
+		tests.TestPerson.start();
 	}
 	
 }
