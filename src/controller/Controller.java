@@ -1,5 +1,14 @@
 package controller;
 
-public class Controller {
+import tests.*;
+import model.*;
 
+public class Controller 
+{
+
+	public void start()
+	{
+		
+	}
+	
 }
