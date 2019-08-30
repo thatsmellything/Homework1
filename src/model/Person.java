@@ -7,10 +7,63 @@ public abstract class Person
 	private String phNumber;
 	private String eMail;
 	
+	public Person()
+	{
+		
+	}
+	
+	public Person(String name, String address, String phNumber, String eMail)
+	{
+		this.name = name;
+		this.address = address;
+		this.phNumber = phNumber;
+		this.eMail = eMail;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public String getAddress()
+	{
+		return address;
+	}
+	
+	public void setAddress(String address)
+	{
+		this.address = address;
+	}
+	
+	public String getPhNumber()
+	{
+		return phNumber;
+	}
+	
+	public void setPhNumber(String phNumber)
+	{
+		this.phNumber = phNumber;
+	}
+	
+	public String getEmail()
+	{
+		return eMail;
+	}
+	
+	public void setEmail(String eMail)
+	{
+		this.eMail = eMail;
+	}
+	@Override
+	
 	public String toString()
 	{
-		String description = "hello im not working right, I need to be overriden";
-		return description;
+		return getClass().getName() + "\n" + name;
 	}
 
 }
