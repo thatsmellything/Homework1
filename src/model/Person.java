@@ -2,6 +2,8 @@ package model;
 
 public abstract class Person 
 {
+	//variables and conditions that are needed to be a person
+	
 	private String name;
 	private String address;
 	private String phNumber;
@@ -19,6 +21,9 @@ public abstract class Person
 		this.phNumber = phNumber;
 		this.eMail = eMail;
 	}
+	
+	
+	//setters and getters
 	
 	public String getName()
 	{
@@ -59,6 +64,8 @@ public abstract class Person
 	{
 		this.eMail = eMail;
 	}
+	
+	
 	@Override
 	
 	public String toString()
