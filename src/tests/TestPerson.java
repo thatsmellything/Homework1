@@ -3,7 +3,7 @@ package tests;
 public class TestPerson 
 {
 	
-	public void start()
+	public static void start()
 	{
 		
 	}
