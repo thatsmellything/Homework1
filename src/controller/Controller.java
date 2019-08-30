@@ -8,7 +8,7 @@ public class Controller
 
 	public void start()
 	{
-		
+		tests.testDate.start();
 	}
 	
 }
