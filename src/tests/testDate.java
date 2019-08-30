@@ -2,7 +2,7 @@ package tests;
 
 import controller.MyDate;
 
-public class testDate 
+public class TestDate 
 {
 	public static void start()
 	{
