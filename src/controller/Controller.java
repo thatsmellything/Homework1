@@ -9,7 +9,14 @@ public class Controller
 	public void start()
 	{
 		tests.TestDate.start();
-		tests.TestPerson.start();
+		
+		
+		try {
+			tests.TestPerson.start();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }

@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Person 
+public class Person 
 {
 	//variables and conditions that are needed to be a person
 	
@@ -11,28 +11,31 @@ public abstract class Person
 	
 	public Person()
 	{
-		
+		name = "unknown";
+		System.out.println("Person constructor name : " + name);
 	}
 	
-	public Person(String name, String address, String phNumber, String eMail)
+	public Person(String N, String A, String P, String E)
 	{
-		this.name = name;
-		this.address = address;
-		this.phNumber = phNumber;
-		this.eMail = eMail;
+		name = N;
+		address = A;
+		phNumber = P;
+		eMail = E;
 	}
 	
-	
-	//setters and getters
+	public void setName(String N)
+	{
+		name = N;
+	}
 	
 	public String getName()
 	{
 		return name;
 	}
 	
-	public void setName(String name)
+	public void setAddress(String A)
 	{
-		this.name = name;
+		address = A;
 	}
 	
 	public String getAddress()
@@ -40,9 +43,9 @@ public abstract class Person
 		return address;
 	}
 	
-	public void setAddress(String address)
+	public void setPhNumber(String P)
 	{
-		this.address = address;
+		phNumber = P;
 	}
 	
 	public String getPhNumber()
@@ -50,27 +53,16 @@ public abstract class Person
 		return phNumber;
 	}
 	
-	public void setPhNumber(String phNumber)
+	public void setEMail(String E)
 	{
-		this.phNumber = phNumber;
+		eMail = E;
 	}
 	
-	public String getEmail()
+	public String getEMail()
 	{
 		return eMail;
 	}
 	
-	public void setEmail(String eMail)
-	{
-		this.eMail = eMail;
-	}
-	
-	
-	@Override
-	
-	public String toString()
-	{
-		return getClass().getName() + "\n" + name;
-	}
-
 }
+	
+	
