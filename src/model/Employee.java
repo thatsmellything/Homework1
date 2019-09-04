@@ -22,7 +22,7 @@ public class Employee extends Person
 		return name;
 	}
 	
-	public String returnAddress()
+	public String returnEmpAddress()
 	{
 		return address;
 	}

@@ -10,7 +10,7 @@ import org.junit.Test;
 public class TestPerson 
 {
 	
-	private Employee testEmployee;
+	private static Employee testEmployee;
 	
 	
 	@Before

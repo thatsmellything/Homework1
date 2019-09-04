@@ -9,11 +9,12 @@ public class Runner
 	public static void main (String [] args)
 	{
 		Controller app = new Controller();
-		Employee emp = new Employee();
+		//Employee emp = new Employee();
+		Faculty Fac = new Faculty();
+				Fac.returnEmpName();
 		
 		
-		
-		emp.returnEmpName();
+		//emp.returnEmpName();
 		
 		app.start();
 	}
