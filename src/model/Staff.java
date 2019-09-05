@@ -3,10 +3,14 @@ package model;
 public class Staff extends Employee
 {
 	//add title
+	String title = "Communication Cordinator";
 	
 	Staff()
 	{
 		super();
+		
+		
+		
 		//name = "grandchild";
 		//address = "none I dont own house";
 		//phNumber = 000.0000000;
@@ -15,7 +19,7 @@ public class Staff extends Employee
 		//System.out.println("this is in the grandchild class " + name);
 	}
 	
-	public Staff(String N, String A, double P, String E)
+	public Staff(String N, String A, double P, String E, String title)
 	{
 		super(N, A, P, E);
 	}
@@ -24,7 +28,7 @@ public class Staff extends Employee
 	public static void main(String[] args)
 	{
 		Staff St = new Staff();
-		System.out.println("Grandchild (aka Staff):" + " " + St.name + ", " + St.address + ", " + St.phNumber + ", " + St.eMail);
+		System.out.println("Grandchild (aka Staff):" + " " + St.name + ", " + St.address + ", " + St.phNumber + ", " + St.eMail + " " + St.title);
 	}
 
 }
