@@ -46,7 +46,7 @@ public class Person
 	
 	public static void main(String[] args)
 	{
-		Person tester = new Person("Joe", "2733 Test Drive", 801.6363, "email.email");
+		Person tester = new Person("Person", "Person Home", 801.6363, "Person@email.com");
 		System.out.println("Person Tester: " + tester.getName() + ", " + tester.getAddress() + ", " + tester.getPhNumber() + ", " + tester.getEMail());
 		
 	}
