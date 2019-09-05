@@ -13,6 +13,7 @@ public class TestPerson
 	{
 		Person.main(args);
 		Staff.main(args);
+		
 	}
 	
 	
