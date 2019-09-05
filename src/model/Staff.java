@@ -13,7 +13,7 @@ public class Staff extends Employee
 		//System.out.println("this is in the grandchild class " + name);
 	}
 	
-	Staff(String N, String A, double P, String E)
+	public Staff(String N, String A, double P, String E)
 	{
 		super(N, A, P, E);
 	}
