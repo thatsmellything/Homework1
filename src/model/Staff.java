@@ -2,13 +2,15 @@ package model;
 
 public class Staff extends Employee
 {
+	//add title
+	
 	Staff()
 	{
 		super();
-		name = "grandchild";
-		address = "none I dont own house";
-		phNumber = 000.0000000;
-		eMail = "IgotNoEmail@silly.com";
+		//name = "grandchild";
+		//address = "none I dont own house";
+		//phNumber = 000.0000000;
+		//eMail = "IgotNoEmail@silly.com";
 		
 		//System.out.println("this is in the grandchild class " + name);
 	}

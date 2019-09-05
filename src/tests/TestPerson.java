@@ -13,7 +13,8 @@ public class TestPerson
 	{
 		humans = new Person[2];
 		humans[0] = new Employee("Billy", "California Drive", 385.6238462, "someoneEmail@gmall.com");
-		humans[1] = new Staff("James", "UT", 834758.234, "Anotheremail@yahoo.com");
+		humans[1] = new Staff("Staff", "UT", 1800.666666, "StaffEmail@gmail.com");
+		//humans[2] = new Faculty("Faculty", "Logan", 239848.23, "FacultyEmail@gmail.com");
 		
 	}
 	
