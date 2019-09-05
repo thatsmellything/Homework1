@@ -4,10 +4,10 @@ public class Person
 {
 	//variables and conditions that are needed to be a person
 	
-	private String name;
-	private String address;
-	private String phNumber;
-	private String eMail;
+	protected String name;
+	protected String address;
+	protected double phNumber;
+	protected String eMail;
 	
 	public Person()
 	{
@@ -15,7 +15,7 @@ public class Person
 		System.out.println("Person constructor name : " + name);
 	}
 	
-	public Person(String N, String A, String P, String E)
+	public Person(String N, String A, double P, String E)
 	{
 		name = N;
 		address = A;
@@ -23,44 +23,25 @@ public class Person
 		eMail = E;
 	}
 	
-	public void setName(String N)
-	{
-		name = N;
-	}
+	public void setName(String N){name = N;}
 	
-	public String getName()
-	{
-		return name;
-	}
+	public String getName(){return name;}
 	
-	public void setAddress(String A)
-	{
-		address = A;
-	}
+	public void setAddress(String A){address = A;}
 	
-	public String getAddress()
-	{
-		return address;
-	}
+	public String getAddress(){return address;}
 	
-	public void setPhNumber(String P)
-	{
-		phNumber = P;
-	}
+	public void setPhNumber(double P){phNumber = P;}
 	
-	public String getPhNumber()
-	{
-		return phNumber;
-	}
+	public double getPhNumber(){return phNumber;}
 	
-	public void setEMail(String E)
-	{
-		eMail = E;
-	}
+	public void setEMail(String E){eMail = E;}
 	
-	public String getEMail()
+	public String getEMail(){return eMail;}
+	
+	public void whoIsThis()
 	{
-		return eMail;
+		System.out.println("This method will be used in child class hopefully: ");
 	}
 	
 }
