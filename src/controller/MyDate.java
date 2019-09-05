@@ -9,14 +9,19 @@ public class MyDate
 	private int month;
 	private int day;
 	
+
+	
 	public MyDate()
 	{
 		GregorianCalendar cal = new GregorianCalendar();
 		year = cal.get(Calendar.YEAR);
 		month = cal.get(Calendar.MONTH);
 		day = cal.get(Calendar.DAY_OF_MONTH);
+	
 		
 	}
+	
+	
 	
 	public MyDate(long elapsedTime) 
 	{

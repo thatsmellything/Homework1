@@ -11,12 +11,7 @@ public class Controller
 		tests.TestDate.start();
 		
 		
-		try {
-			tests.TestPerson.start();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	}
 	
 }
