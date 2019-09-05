@@ -5,7 +5,12 @@ public class Staff extends Employee
 	Staff()
 	{
 		super();
-		System.out.println("this is in the grandchild class " + name);
+		name = "grandchild";
+		address = "none I dont own house";
+		phNumber = 000.0000000;
+		eMail = "IgotNoEmail@silly.com";
+		
+		//System.out.println("this is in the grandchild class " + name);
 	}
 	
 	Staff(String N, String A, double P, String E)
@@ -17,7 +22,7 @@ public class Staff extends Employee
 	public static void main(String[] args)
 	{
 		Staff St = new Staff();
-		System.out.println("Name: " + St.name);
+		System.out.println("Grandchild: " + " " + St.name + " " + St.address + " " + St.phNumber + " " + St.eMail);
 	}
 
 }
