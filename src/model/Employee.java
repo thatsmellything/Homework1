@@ -14,23 +14,8 @@ public class Employee extends Person
 		System.out.println("constructor for employee is correct : " + name);
 	}
 	
-	public String returnEmpName()
+	public Employee(String N, String A, double P, String E)
 	{
-		return name;
-	}
-	
-	public String returnEmpAddress()
-	{
-		return address;
-	}
-	
-	public double returnEmpPhNumber()
-	{
-		return phNumber;
-	}
-	
-	public String returnEmpEMail()
-	{
-		return eMail;
+		super(N,A,P,E);
 	}
 }
