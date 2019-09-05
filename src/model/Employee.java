@@ -21,7 +21,8 @@ public class Employee extends Person
 	
 	public static void main(String[] args)
 	{
-		TestPerson.main(args);
+		Employee Em = new Employee();
+		System.out.println();
 	}
 }
 

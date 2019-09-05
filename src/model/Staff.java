@@ -28,8 +28,8 @@ public class Staff extends Employee
 	
 	public static void main(String[] args)
 	{
-		Staff St = new Staff();
-		System.out.println("Grandchild (aka Staff):" + " " + St.name + ", " + St.address + ", " + St.phNumber + ", " + St.eMail + ", " + St.title);
+		Staff St = new Staff("Staff", "Staff Work Address", 801.73737, "Staff@email.com");
+		System.out.println("Staff Tester: " + St.name + ", " + St.address + ", " + St.phNumber + ", " + St.eMail + ", " + St.title);
 	}
 
 }
