@@ -7,13 +7,32 @@ import model.*;
 
 public class TestPerson 
 {
+	
+	
+	public static void main(String[] args)
+	{
+		
+		Staff.main(args);
+	}
+	
+	
+	
+	
+	
+}	
+
+
+/*
+ * 
+class test
+	{
 	Person[] humans;
 	
 	public TestPerson()
 	{
-		humans = new Person[2];
+		humans = new Person[1];
 		humans[0] = new Employee("Billy", "California Drive", 385.6238462, "someoneEmail@gmall.com");
-		humans[1] = new Staff("Staff", "UT", 1800.666666, "StaffEmail@gmail.com");
+		
 		//humans[2] = new Faculty("Faculty", "Logan", 239848.23, "FacultyEmail@gmail.com");
 		
 	}
@@ -27,15 +46,15 @@ public class TestPerson
 			System.out.println(p.getName() + " " + p.getAddress() + " " + p.getPhNumber() + " " + p.getEMail());
 	}
 	
-	public static void main(String[] args)
+	//public static void main(String[] args)
 	{
 		TestPerson tp = new TestPerson();
 		tp.whoAreThesePeople();
-	}
-	{
+		
 		
 	}
-	
+	}
+	*/
 	
 
-}
+
