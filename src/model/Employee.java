@@ -1,5 +1,7 @@
 package model;
 
+import tests.*;
+
 public class Employee extends Person
 {
 
@@ -17,8 +19,10 @@ public class Employee extends Person
 		super(N,A,P,E);
 	}
 	
-	public void whoIsThis()
+	public static void main(String[] args)
 	{
-		
+		TestPerson.main(args);
 	}
 }
+
+

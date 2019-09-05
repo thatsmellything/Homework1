@@ -11,7 +11,7 @@ public class TestPerson
 	
 	public static void main(String[] args)
 	{
-		
+		Person.main(args);
 		Staff.main(args);
 	}
 	
