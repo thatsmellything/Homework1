@@ -7,7 +7,7 @@ public class Employee extends Person
 
 	//add office salary date hired
 	
-	String office = "CEO";
+	String office = "Employee";
 	double salary = 100000.99;
 	//String dateHired = TestDate.getHireDate();
 	String dateHired;
