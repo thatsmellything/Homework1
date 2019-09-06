@@ -4,8 +4,16 @@ public class Student extends Person
 {
 	//school class freshman sophomore junior senior
 
-	String classStatus = "Freshman";
+	private String classStatus = "Freshman";
 	
+	public String getClassStatus() {
+		return classStatus;
+	}
+
+	public void setClassStatus(String classStatus) {
+		this.classStatus = classStatus;
+	}
+
 	public Student()
 	{
 		super("Jensen", "8328 Mountain View Towers", 801.6417630, "jensen.judkins@aggiemail.usu.edu");
@@ -21,7 +29,7 @@ public class Student extends Person
 	public static void main(String[] args)
 	{
 		Student St = new Student("Student", "Student Dorm", 801.6417630, "ComputerScienceStudent@aggiemail.usu.edu");
-		System.out.println("Student Tester: " + St.getName() + ", " + St.getAddress() + ", " + St.getPhNumber() + ", " + St.getEMail() + ", " + St.classStatus);
+		System.out.println("Student Tester: " + St.getName() + ", " + St.getAddress() + ", " + St.getPhNumber() + ", " + St.getEMail() + ", " + St.getClassStatus());
 	}
 	
 }
