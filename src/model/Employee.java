@@ -1,7 +1,6 @@
 package model;
 
-import tests.*;
-import controller.*;
+
 
 public class Employee extends Person
 {

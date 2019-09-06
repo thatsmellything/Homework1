@@ -22,7 +22,7 @@ public class Staff extends Employee
 	public Staff(String N, String A, double P, String E)
 	{
 		super(N, A, P, E);
-		title = title;
+		
 	}
 	
 	
