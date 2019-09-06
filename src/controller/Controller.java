@@ -21,7 +21,8 @@ public class Controller
 	public void whoIsThis()
 	{
 		for(Person p : people)
-			p.whoIsThisAgain();
+			System.out.println(p.whoIsThisAgain());
+		
 		
 		for(Person p : people)
 			System.out.println(p.getName() + ", " + p.getAddress() + ", " + p.getPhNumber() + ", " + p.getEMail());
