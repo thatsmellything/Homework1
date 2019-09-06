@@ -29,7 +29,7 @@ public class Staff extends Employee
 	public static void main(String[] args)
 	{
 		Staff St = new Staff("Staff", "Staff Work Address", 801.73737, "Staff@email.com");
-		System.out.println("Staff Tester: " + St.getName() + ", " + St.address + ", " + St.phNumber + ", " + St.eMail + ", " + St.title);
+		System.out.println("Staff Tester: " + St.getName() + ", " + St.getAddress() + ", " + St.getPhNumber() + ", " + St.getEMail() + ", " + St.title);
 	}
 
 }
