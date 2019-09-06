@@ -20,7 +20,7 @@ public class Student extends Person
 	
 	public static void main(String[] args)
 	{
-		Student St = new Student("Jensen", "8328 Mountain View Towers", 801.6417630, "jensen.judkins@aggiemail.usu.edu");
+		Student St = new Student("Student", "Student Dorm", 801.6417630, "ComputerScienceStudent@aggiemail.usu.edu");
 		System.out.println("Student Tester: " + St.getName() + ", " + St.getAddress() + ", " + St.getPhNumber() + ", " + St.getEMail() + ", " + St.classStatus);
 	}
 	
