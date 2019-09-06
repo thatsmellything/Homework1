@@ -21,6 +21,8 @@ public class TestDate
 	
 	System.out.println("Date2 - Month: " + date2.getMonth() + " Day: " + date2.getDay() + " Year: " + date2.getYear());
 
+	
+	
 	}
 	/*
 	public static String getDate()
@@ -30,4 +32,12 @@ public class TestDate
 		return hireDate;
 	}
 	*/
+
+	public String getHireDate() {
+		return hireDate;
+	}
+
+	public void setHireDate(String hireDate) {
+		this.hireDate = hireDate;
+	}
 }

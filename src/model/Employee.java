@@ -1,6 +1,6 @@
 package model;
 
-
+import tests.TestDate;
 
 public class Employee extends Person
 {
@@ -9,6 +9,7 @@ public class Employee extends Person
 	
 	String office = "CEO";
 	double salary = 100000.99;
+	//String dateHired = TestDate.getHireDate();
 	String dateHired;
 	/*
 	public String getDate()
