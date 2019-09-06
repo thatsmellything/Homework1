@@ -31,6 +31,13 @@ public class Employee extends Person
 		super(N,A,P,E);
 	}
 	
+	public String whoIsThisAgain()
+	{
+		Employee Bob = new Employee("Bob", "Bob House", 2384.234, "Bob@gmail.com");
+		String bobInfo = "Bob: " + Bob.getName() + ", " + Bob.getAddress() + ", " + Bob.getPhNumber() + ", " + Bob.getEMail();
+		return bobInfo;
+	}
+	
 	public static void main(String[] args)
 	{
 		Employee Em = new Employee("Employee", "Employee Work Address", 98238.237844, "Employee@email.com");

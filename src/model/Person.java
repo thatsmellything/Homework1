@@ -50,6 +50,13 @@ public class Person
 		System.out.println("Person Tester: " + tester.getName() + ", " + tester.getAddress() + ", " + tester.getPhNumber() + ", " + tester.getEMail());
 		
 	}
+
+	public String whoIsThisAgain() 
+	{
+		Person Ben = new Person("Ben", "Ben House", 8234.2345435, "Ben@gmail.com");
+		String benInfo = "Ben: " + Ben.getName() + ", " + Ben.getAddress() + ", " + Ben.getPhNumber() + ", " + Ben.getEMail();
+		return benInfo;
+	}
 	
 }
 	
