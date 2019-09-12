@@ -61,6 +61,7 @@ public class Person
 	public String toString()
 	{
 		return null;
+		//children classes will use this
 	}
 	
 }
