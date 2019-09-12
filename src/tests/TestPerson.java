@@ -12,16 +12,16 @@ public class TestPerson
 	public static void main(String[] args)
 	{
 		Person a, b, c, d, e;
-		a = new Person("james", "ksjhdf", 839.3495, "skdhf");
+		a = new Person("Harry", "London", 839.3495345, "TheBoiWhoLived@gmail.com");
 			a.toString();
-		b = new Employee("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
-			a.toString();
-		c = new Faculty("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
+		b = new Employee("Dobby", "Snape's Lair", 385.7489503, "DobbyBoi@yahoo.com", "Elf Slave", 0.001);
 			b.toString();
-		d = new Staff("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21, "Communications Cordinator");
+		c = new Faculty("Katniss", "District 12", 701.2534895, "BowSniper17@ILiveInAWasteland.com", "Rabit Hunter CEO", 12.00, "Free whenever Peta is around;)", "Victor");
 			c.toString();
-		e = new Student();
+		d = new Staff("Thomas", "The Maze", 1800.9999999, "RunningMan@gmail.com", "Head Runner", 1000.00, "Lead Runner");
 			d.toString();
+		e = new Student("Jensen", "Logan Utah", 801.6417630, "jensen.judkins@aggiemail.usu.edu", "Freshman");
+			e.toString();
 			
 		
 	}

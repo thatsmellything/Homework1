@@ -4,29 +4,47 @@ public class Faculty extends Employee
 {
 	//add office hours and a rank
 	
-	String officeHours = "9am-11:30am";
-	String rank = "Grand Wizard";
+	String officeHours;
+	String rank;
 	
 	
-	public Faculty(String N, String A, double P, String E, String O, double S)
+	public Faculty(String N, String A, double P, String E, String O, double S, String officeHours, String rank)
 	{
 		super(N,A,P,E,O,S);
+		this.setOfficeHours(officeHours);
+		this.setRank(rank);
+	}
+	
+	public String getOfficeHours()
+	{
+		return this.officeHours;
+	}
+	
+	public void setOfficeHours(String officeHours)
+	{
+		this.officeHours = officeHours;
+	}
+	
+	public String getRank()
+	{
+		return this.rank;
+	}
+	
+	public void setRank(String rank)
+	{
+		this.rank = rank;
 	}
 	
 	public String toString()
 	{
-		return null;
-		
-		//Faculty Fac = new Faculty("Faculty", "Faulty Work Address", 1800.20348720374, "Faculty@gmail.com");
-		//String Facultytest = N + A;
+		String person = "Faculty: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +  this.getSalary() + ", " +  this.getOfficeHours() + ", " +  this.getRank();
+		System.out.println(person);
+		System.out.println();
+		return person;
 		
 		
 	}
 	
-	public static void main(String[] args)
-	{
-		Faculty Fac = new Faculty("Faculty", "Faulty Work Address", 1800.20348720374, "Faculty@gmail.com", "CEO", 219021.21);
-		System.out.println("Faculty Tester: " + Fac.getName() + ", " + Fac.getAddress() + ", " + Fac.getPhNumber() + ", " + Fac.getEMail() + ", " + Fac.officeHours + ", " + Fac.rank);
-	}
+	
 
 }

@@ -3,7 +3,7 @@ package model;
 public class Staff extends Employee
 {
 	//add title
-	String title = "Communication Cordinator";
+	String title;
 	
 	
 		
@@ -34,11 +34,15 @@ public class Staff extends Employee
 		this.title = title;
 	}
 	
-	
-	public static void main(String[] args)
+	public String toString()
 	{
-		Staff St = new Staff("Staff", "Staff Work Address", 801.73737, "Staff@email.com", "CEO", 219021.21, "Comm");
-		System.out.println("Staff Tester: " + St.getName() + ", " + St.getAddress() + ", " + St.getPhNumber() + ", " + St.getEMail() + ", " + St.title);
+		String person = "Staff: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getTitle();
+		System.out.println(person);
+		System.out.println();
+		return person;
 	}
+	
+	
+	
 
 }

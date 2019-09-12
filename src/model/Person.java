@@ -3,7 +3,6 @@ package model;
 public class Person 
 {
 	//variables and conditions that are needed to be a person
-	
 	private String name;
 	private String address;
 	private double phNumber;
@@ -37,20 +36,15 @@ public class Person
 	
 	
 	
-	public static void main(String[] args)
-	{
-		Person a;
-		a = new Person("james", "ksjhdf", 839.3495, "skdhf");
-			a.toString();
-		
-	}
+	
 
 	
 	
 	public String toString()
 	{
-		String person = this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
+		String person = "Person: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
 		System.out.println(person);
+		System.out.println();
 		return person;
 		//children classes will use this
 	}

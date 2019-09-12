@@ -7,8 +7,8 @@ public class Employee extends Person
 
 	//add office salary date hired
 	
-	String office = "Employee";
-	double salary = 100000.99;
+	String office;
+	double salary;
 	//String dateHired = TestDate.getHireDate();
 	String dateHired;
 	
@@ -34,12 +34,7 @@ public class Employee extends Person
 	
 
 	
-	public String toString()
-	{
-		String person = this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
-		System.out.println(person);
-		return person;
-	}
+	
 	
 	
 	public String getOffice() {
@@ -58,12 +53,15 @@ public class Employee extends Person
 		this.salary = salary;
 	}
 
-	public static void main(String[] args)
+	public String toString()
 	{
-		Person a;
-		a = new Employee("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
-			a.toString();
+		String person = "Employee: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
+		System.out.println(person);
+		System.out.println();
+		return person;
 	}
+	
+	
 }
 
 
