@@ -4,16 +4,12 @@ public class Person
 {
 	//variables and conditions that are needed to be a person
 	
-	protected String name;
-	protected String address;
-	protected double phNumber;
-	protected String eMail;
+	private String name;
+	private String address;
+	private double phNumber;
+	private String eMail;
 	
-	public Person()
-	{
-		name = "unknown";
-		System.out.println("Person constructor name : " + name);
-	}
+	
 	
 	public Person(String N, String A, double P, String E)
 	{
@@ -39,28 +35,23 @@ public class Person
 	
 	public String getEMail(){return eMail;}
 	
-	public void whoIsThis()
-	{
-		System.out.println("This method will be used in child class hopefully: ");
-	}
+	
 	
 	public static void main(String[] args)
 	{
-		Person tester = new Person("Person", "Person Home", 801.6363, "Person@email.com");
-		System.out.println("Person Tester: " + tester.getName() + ", " + tester.getAddress() + ", " + tester.getPhNumber() + ", " + tester.getEMail());
+		Person a;
+		a = new Person("james", "ksjhdf", 839.3495, "skdhf");
+			a.toString();
 		
 	}
 
-	public String whoIsThisAgain() 
-	{
-		Person Ben = new Person("Ben", "Ben House", 8234.2345435, "Ben@gmail.com");
-		String benInfo = "Ben: " + Ben.getName() + ", " + Ben.getAddress() + ", " + Ben.getPhNumber() + ", " + Ben.getEMail();
-		return benInfo;
-	}
+	
 	
 	public String toString()
 	{
-		return null;
+		String person = this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
+		System.out.println(person);
+		return person;
 		//children classes will use this
 	}
 	

@@ -11,35 +11,39 @@ public class Employee extends Person
 	double salary = 100000.99;
 	//String dateHired = TestDate.getHireDate();
 	String dateHired;
-	/*
-	public String getDate()
-	{
-		return null;
-		dateHired = TestDate.getDate();
-		
-	}
-	*/
-	public Employee()
-	{
-		super("Joe", "2733 willow wick dr", 801.6417630, "email@email.com");
-		
-		System.out.println("Constructor for Employee is correct: " + name + ", " + address + ", " + phNumber + ", " + eMail);
-	}
 	
-	public Employee(String N, String A, double P, String E)
+	private String name;
+	private String address;
+	private double phNumber;
+	private String eMail;
+	
+	
+	
+	
+	public Employee(String N, String A, double P, String E, String office, double salary)
 	{
 		super(N,A,P,E);
+		N = name;
+		A = address;
+		P = phNumber;
+		E = eMail;
+		this.setOffice(office);
+		this.setSalary(salary);
 	}
 	
-	public String whoIsThisAgain()
+	
+
+	
+	public String toString()
 	{
-		Employee Bob = new Employee("Bob", "Bob House", 2384.234, "Bob@gmail.com");
-		String bobInfo = "Bob: " + Bob.getName() + ", " + Bob.getAddress() + ", " + Bob.getPhNumber() + ", " + Bob.getEMail() + ", " + Bob.getOffice() + ", " + Bob.getSalary();
-		return bobInfo;
+		String person = this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
+		System.out.println(person);
+		return person;
 	}
+	
 	
 	public String getOffice() {
-		return office;
+		return this.office;
 	}
 
 	public void setOffice(String office) {
@@ -47,7 +51,7 @@ public class Employee extends Person
 	}
 
 	public double getSalary() {
-		return salary;
+		return this.salary;
 	}
 
 	public void setSalary(double salary) {
@@ -56,8 +60,9 @@ public class Employee extends Person
 
 	public static void main(String[] args)
 	{
-		Employee Em = new Employee("Employee", "Employee Work Address", 98238.237844, "Employee@email.com");
-		System.out.println("Employee Tester: " + Em.getName() + ", " + Em.getAddress() + ", " + Em.getPhNumber() + ", " + Em.getEMail() + ", " + Em.office + ", " + Em.salary + ", " + Em.dateHired);
+		Person a;
+		a = new Employee("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
+			a.toString();
 	}
 }
 

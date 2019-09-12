@@ -11,10 +11,18 @@ public class TestPerson
 	
 	public static void main(String[] args)
 	{
-		Person.main(args);
-		Student.main(args);
-		Employee.main(args);
-		Staff.main(args);
+		Person a, b, c, d, e;
+		a = new Person("james", "ksjhdf", 839.3495, "skdhf");
+			a.toString();
+		b = new Employee("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
+			a.toString();
+		c = new Faculty("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21);
+			b.toString();
+		d = new Staff("james", "ksjhdf", 839.3495, "skdhf", "CEO", 219021.21, "Communications Cordinator");
+			c.toString();
+		e = new Student();
+			d.toString();
+			
 		
 	}
 	
