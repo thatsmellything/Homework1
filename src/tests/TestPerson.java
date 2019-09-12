@@ -11,6 +11,9 @@ public class TestPerson
 	
 	public static void main(String[] args)
 	{
+		//First part of the inputs for the test should always be null because the class names
+		// will be automatically labeled in the output
+		
 		Person a, b, c, d, e;
 		a = new Person(null, "Harry", "London", 839.3495345, "TheBoiWhoLived@gmail.com");
 			a.toString();
