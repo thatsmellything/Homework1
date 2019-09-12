@@ -4,7 +4,7 @@ import controller.MyDate;
 
 public class TestDate 
 {
-	String hireDate;
+	static String hireDate;
 	
 	public static void start()
 	{
@@ -15,7 +15,7 @@ public class TestDate
 	MyDate date1 = new MyDate();
 	MyDate date2 = new MyDate(34355555133101L);
 	
-	String hireDate = "Date1 - Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear();
+	hireDate = "Date1 - Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear();
 	
 	System.out.println("Date1 - Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear());
 	

@@ -58,6 +58,11 @@ public class Person
 		return benInfo;
 	}
 	
+	public String toString()
+	{
+		return null;
+	}
+	
 }
 	
 	
