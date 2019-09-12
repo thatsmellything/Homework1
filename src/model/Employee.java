@@ -9,8 +9,9 @@ public class Employee extends Person
 	
 	String office;
 	double salary;
-	//String dateHired = TestDate.getHireDate();
 	String dateHired;
+	//String dateHired = TestDate.getHireDate();
+	
 	
 	private String name;
 	private String address;
@@ -20,7 +21,8 @@ public class Employee extends Person
 	
 	
 	
-	public Employee(String C, String N, String A, double P, String E, String office, double salary)
+	
+	public Employee(String C, String N, String A, double P, String E, String office, double salary, String dateHired)
 	{
 		super(C,N,A,P,E);
 		N = name;
@@ -29,11 +31,21 @@ public class Employee extends Person
 		E = eMail;
 		this.setOffice(office);
 		this.setSalary(salary);
-		
+		this.setDateHired(dateHired);
 	}
 	
 	
+	public String getDateHired()
+	{
+		return this.dateHired;
+	}
 	
+	public void setDateHired(String dateHired)
+	{
+		dateHired = TestDate.start();
+		
+		this.dateHired = dateHired;
+	}
 	
 	
 	public String getOffice() {
@@ -66,7 +78,7 @@ public class Employee extends Person
 	public String toString()
 	{
 		
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
+		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getDateHired();
 		System.out.println(person);
 		System.out.println();
 		return person;

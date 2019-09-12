@@ -5,24 +5,21 @@ import controller.MyDate;
 public class TestDate 
 {
 	static String hireDate;
-	
-	public static void start()
+	static String testDate;
+	public static String start()
 	{
 		
 	//getDate();
 		
 		
 	MyDate date1 = new MyDate();
-	MyDate date2 = new MyDate(34355555133101L);
+	//MyDate date2 = new MyDate(34355555133101L);
 	
-	hireDate = "Date1 - Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear();
+	hireDate = "Hire Date = Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear();
+	//testDate = "tets date" + date2.getMonth() +""+ date2.getDay()+"" + date2.getYear();
+	//System.out.println(testDate);
 	
-	System.out.println("Date1 - Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear());
-	
-	System.out.println("Date2 - Month: " + date2.getMonth() + " Day: " + date2.getDay() + " Year: " + date2.getYear());
-
-	
-	
+	return hireDate;
 	}
 	/*
 	public static String getDate()

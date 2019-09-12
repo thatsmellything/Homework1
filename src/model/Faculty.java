@@ -8,9 +8,9 @@ public class Faculty extends Employee
 	String rank;
 	
 	
-	public Faculty(String C, String N, String A, double P, String E, String O, double S, String officeHours, String rank)
+	public Faculty(String C, String N, String A, double P, String E, String O, double S, String D, String officeHours, String rank)
 	{
-		super(C,N,A,P,E,O,S);
+		super(C,N,A,P,E,O,S,D);
 		this.setOfficeHours(officeHours);
 		this.setRank(rank);
 	}
@@ -48,7 +48,7 @@ public class Faculty extends Employee
 	
 	public String toString()
 	{
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +  this.getSalary() + ", " +  this.getOfficeHours() + ", " +  this.getRank();
+		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +  this.getSalary() + ", " + this.getDateHired() + ", " +  this.getOfficeHours() + ", " +  this.getRank();
 		System.out.println(person);
 		System.out.println();
 		return person;
