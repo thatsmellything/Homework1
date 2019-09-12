@@ -10,9 +10,9 @@ public class Student extends Person
 
 	
 	
-	public Student(String N, String A, double P, String E, String classStatus)
+	public Student(String C, String N, String A, double P, String E, String classStatus)
 	{
-		super(N,A,P,E);
+		super(C,N,A,P,E);
 		this.setClassStatus(classStatus);
 	}
 	
@@ -24,9 +24,20 @@ public class Student extends Person
 		this.classStatus = classStatus;
 	}
 	
+	public void setClassName(String C)
+	{
+		C = className;
+	}
+	
+	public String getClassName() 
+	{
+		className = "Student: ";
+		return className;
+	}
+	
 	public String toString()
 	{
-		String person = "Student: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " + this.getClassStatus();
+		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " + this.getClassStatus();
 		System.out.println(person);
 		System.out.println();
 		return person;

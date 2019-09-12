@@ -17,9 +17,9 @@ public class Staff extends Employee
 		//System.out.println("this is in the grandchild class " + name);
 	
 	
-	public Staff(String N, String A, double P, String E, String O, double S, String title)
+	public Staff(String C, String N, String A, double P, String E, String O, double S, String title)
 	{
-		super(N,A,P,E,O,S);
+		super(C,N,A,P,E,O,S);
 		this.setTitle(title);
 		
 	}
@@ -34,9 +34,22 @@ public class Staff extends Employee
 		this.title = title;
 	}
 	
+
+	
+	public void setClassName(String C)
+	{
+		C = className;
+	}
+	
+	public String getClassName() 
+	{
+		className = "Staff: ";
+		return className;
+	}
+	
 	public String toString()
 	{
-		String person = "Staff: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getTitle();
+		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getTitle();
 		System.out.println(person);
 		System.out.println();
 		return person;

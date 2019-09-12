@@ -7,11 +7,12 @@ public class Person
 	private String address;
 	private double phNumber;
 	private String eMail;
+	String className;
 	
 	
-	
-	public Person(String N, String A, double P, String E)
+	public Person(String C, String N, String A, double P, String E)
 	{
+		className = C;
 		name = N;
 		address = A;
 		phNumber = P;
@@ -34,6 +35,17 @@ public class Person
 	
 	public String getEMail(){return eMail;}
 	
+	public void setClassName(String C)
+	{
+		C = className;
+	}
+	
+	public String getClassName() 
+	{
+		className = "Person: ";
+		return className;
+	}
+	
 	
 	
 	
@@ -42,7 +54,7 @@ public class Person
 	
 	public String toString()
 	{
-		String person = "Person: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
+		String person = this.getClassName() +  this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
 		System.out.println(person);
 		System.out.println();
 		return person;

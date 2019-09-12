@@ -20,19 +20,18 @@ public class Employee extends Person
 	
 	
 	
-	public Employee(String N, String A, double P, String E, String office, double salary)
+	public Employee(String C, String N, String A, double P, String E, String office, double salary)
 	{
-		super(N,A,P,E);
+		super(C,N,A,P,E);
 		N = name;
 		A = address;
 		P = phNumber;
 		E = eMail;
 		this.setOffice(office);
 		this.setSalary(salary);
+		
 	}
 	
-	
-
 	
 	
 	
@@ -52,10 +51,22 @@ public class Employee extends Person
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
+	
+	public void setClassName(String C)
+	{
+		C = className;
+	}
+	
+	public String getClassName() 
+	{
+		className = "Employee: ";
+		return className;
+	}
 
 	public String toString()
 	{
-		String person = "Employee: " + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
+		
+		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary();
 		System.out.println(person);
 		System.out.println();
 		return person;

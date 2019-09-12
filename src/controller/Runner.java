@@ -13,7 +13,7 @@ public class Runner
 		
 		//emp.returnEmpName();
 		
-		app.whoIsThis();
+		
 	}
 
 }
