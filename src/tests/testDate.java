@@ -15,7 +15,7 @@ public class TestDate
 	MyDate date1 = new MyDate();
 	//MyDate date2 = new MyDate(34355555133101L);
 	
-	hireDate = "Hire Date = Month: " + date1.getMonth() + " Day: " + date1.getDay() + " Year: " + date1.getYear();
+	hireDate = "Month-" + date1.getMonth() + " Day-" + date1.getDay() + " Year-" + date1.getYear();
 	//testDate = "tets date" + date2.getMonth() +""+ date2.getDay()+"" + date2.getYear();
 	//System.out.println(testDate);
 	

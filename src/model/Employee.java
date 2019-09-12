@@ -71,14 +71,14 @@ public class Employee extends Person
 	
 	public String getClassName() 
 	{
-		className = "Employee: ";
+		className = "Employee ";
 		return className;
 	}
 
 	public String toString()
 	{
 		
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getDateHired();
+		String person = this.getClassName() + "Name: " +this.getName() + ", Address: " + this.getAddress() + ", Phone Number: " +  this.getPhNumber() + ", eMail: " +  this.getEMail() + ", Office: " +   this.getOffice() + ", Salary: " +   this.getSalary() + ", Date Hired: " + this.getDateHired();
 		System.out.println(person);
 		System.out.println();
 		return person;

@@ -43,13 +43,13 @@ public class Staff extends Employee
 	
 	public String getClassName() 
 	{
-		className = "Staff: ";
+		className = "Staff ";
 		return className;
 	}
 	
 	public String toString()
 	{
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +   this.getSalary() + ", " + this.getDateHired() + ", " + this.getTitle();
+		String person = this.getClassName() + "Name: " +this.getName() + ", Address: " + this.getAddress() + ", Phone Number: " +  this.getPhNumber() + ", eMail: " +  this.getEMail() + ", Office: " +   this.getOffice() + ", Salary: " +   this.getSalary() + ", Date Hired: " + this.getDateHired() + ", Title: " + this.getTitle();
 		System.out.println(person);
 		System.out.println();
 		return person;

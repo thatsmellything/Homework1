@@ -42,13 +42,13 @@ public class Faculty extends Employee
 	
 	public String getClassName() 
 	{
-		className = "Faculty: ";
+		className = "Faculty ";
 		return className;
 	}
 	
 	public String toString()
 	{
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " +   this.getOffice() + ", " +  this.getSalary() + ", " + this.getDateHired() + ", " +  this.getOfficeHours() + ", " +  this.getRank();
+		String person = this.getClassName() + "Name: " +this.getName() + " Address: " + this.getAddress() + " Phone Number: " +  this.getPhNumber() + " eMail: " +  this.getEMail() + " Office: " +   this.getOffice() + " Salary: " +   this.getSalary() + " " + this.getDateHired() + " Office Hours:  " +  this.getOfficeHours() + " Rank: " +  this.getRank();
 		System.out.println(person);
 		System.out.println();
 		return person;

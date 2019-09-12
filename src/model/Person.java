@@ -42,7 +42,7 @@ public class Person
 	
 	public String getClassName() 
 	{
-		className = "Person: ";
+		className = "Person ";
 		return className;
 	}
 	
@@ -54,7 +54,7 @@ public class Person
 	
 	public String toString()
 	{
-		String person = this.getClassName() +  this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail();
+		String person = this.getClassName() +  "Name: " + this.getName() + ", Address: " + this.getAddress() + ", Phone Number: " +  this.getPhNumber() + ", eMail: " +  this.getEMail();
 		System.out.println(person);
 		System.out.println();
 		return person;

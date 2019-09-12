@@ -31,13 +31,13 @@ public class Student extends Person
 	
 	public String getClassName() 
 	{
-		className = "Student: ";
+		className = "Student ";
 		return className;
 	}
 	
 	public String toString()
 	{
-		String person = this.getClassName() + this.getName() + ", " + this.getAddress() + ", " +  this.getPhNumber() + ", " +  this.getEMail() + ", " + this.getClassStatus();
+		String person = this.getClassName() + "Name: " + this.getName() + ", Address: " + this.getAddress() + ", Phone Number: " +  this.getPhNumber() + ", eMail: " +  this.getEMail() + ", Class Status: " + this.getClassStatus();
 		System.out.println(person);
 		System.out.println();
 		return person;
